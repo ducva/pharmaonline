@@ -20,6 +20,7 @@
 	//loadmenu
 	$category=new clsTable('category');
 	$aParentCategory=$category->select('','','','RootId=0 and Status=1','Position asc');
+	var_dump($aParentCategory);die;
 	$iLine=count($aParentCategory);
 	for($i=0 ; $i < $iLine ; $i++)
 	{
@@ -29,6 +30,7 @@
 		$xtpl->assign('LOADMENU',$aArray);
 		//childcategory
 		$aChildCategory=$category->select('','','','Status=1 and RootId='.$aParentCategory[$i]['Id'],'Position asc');
+		
 		$iChildLine=count($aChildCategory);
 		for($j=0 ; $j < $iChildLine ; $j++)
 		{	
@@ -37,6 +39,7 @@
 					'ROOTID'=>$aChildCategory[$j]['RootId'],
 					'NAME'=>$aChildCategory[$j]['Name']
 					);
+			
 			$xtpl->assign('SUBMENU',$aArray);
 			$xtpl->parse('MAIN.LOADMENU.SUBMENU');
 		}

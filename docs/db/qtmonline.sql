@@ -22,19 +22,20 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE IF NOT EXISTS `admin` (
   `Id` int(10) NOT NULL auto_increment,
-  `Username` varchar(255) collate latin1_general_ci default NULL,
-  `Password` varchar(255) collate latin1_general_ci default NULL,
+  `Username` varchar(255) collate utf8_general_ci default NULL,
+  `Password` varchar(255) collate utf8_general_ci default NULL,
   `Status` int(2) default '1',
   `LastLogin` datetime default NULL,
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`Id`, `Username`, `Password`, `Status`, `LastLogin`) VALUES
-(1, 'ninhgio', '202cb962ac59075b964b07152d234b70', 1, NULL);
+(1, 'ninhgio', '202cb962ac59075b964b07152d234b70', 1, NULL),
+(2, 'ducva', 'e10adc3949ba59abbe56e057f20f883e', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -45,15 +46,15 @@ INSERT INTO `admin` (`Id`, `Username`, `Password`, `Status`, `LastLogin`) VALUES
 DROP TABLE IF EXISTS `advertising`;
 CREATE TABLE IF NOT EXISTS `advertising` (
   `Id` int(10) NOT NULL auto_increment,
-  `Name` varchar(255) collate latin1_general_ci default NULL,
+  `Name` varchar(255) collate utf8_general_ci default NULL,
   `Position` int(2) default '1',
   `Priority` int(5) default '0',
   `Type` int(1) default '1',
   `Status` int(1) default '1',
-  `Link` varchar(255) collate latin1_general_ci default NULL,
-  `File` varchar(255) collate latin1_general_ci default NULL,
+  `Link` varchar(255) collate utf8_general_ci default NULL,
+  `File` varchar(255) collate utf8_general_ci default NULL,
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci ROW_FORMAT=FIXED AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci ROW_FORMAT=FIXED AUTO_INCREMENT=19 ;
 
 --
 -- Dumping data for table `advertising`
@@ -74,14 +75,15 @@ INSERT INTO `advertising` (`Id`, `Name`, `Position`, `Priority`, `Type`, `Status
 DROP TABLE IF EXISTS `category`;
 CREATE TABLE IF NOT EXISTS `category` (
   `Id` int(10) NOT NULL auto_increment,
-  `Name` varchar(255) collate latin1_general_ci default NULL,
+  `Name` varchar(255) collate utf8_general_ci default NULL,
   `Position` int(10) default NULL,
   `Status` int(2) default '1',
-  `ListPropertyId` varchar(255) collate latin1_general_ci default NULL,
+  `ListPropertyId` varchar(255) collate utf8_general_ci default NULL,
   `RootId` int(10) default '0',
   `HotCategory` int(2) default '0',
+  `Link` varchar(255) collate utf8_general_ci default NULL,
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=73 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=73 ;
 
 --
 -- Dumping data for table `category`
@@ -170,13 +172,13 @@ INSERT INTO `category` (`Id`, `Name`, `Position`, `Status`, `ListPropertyId`, `R
 DROP TABLE IF EXISTS `currency`;
 CREATE TABLE IF NOT EXISTS `currency` (
   `Id` int(10) NOT NULL auto_increment,
-  `Name` varchar(255) collate latin1_general_ci default NULL,
-  `Info` text collate latin1_general_ci,
+  `Name` varchar(255) collate utf8_general_ci default NULL,
+  `Info` text collate utf8_general_ci,
   `Status` int(2) default '1',
   `Position` int(10) default NULL,
-  `Rate` varchar(255) collate latin1_general_ci default NULL,
+  `Rate` varchar(255) collate utf8_general_ci default NULL,
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `currency`
@@ -195,10 +197,10 @@ INSERT INTO `currency` (`Id`, `Name`, `Info`, `Status`, `Position`, `Rate`) VALU
 DROP TABLE IF EXISTS `intro`;
 CREATE TABLE IF NOT EXISTS `intro` (
   `Id` int(10) NOT NULL auto_increment,
-  `Detail` text collate latin1_general_ci,
-  `PageName` varchar(255) collate latin1_general_ci default NULL,
+  `Detail` text collate utf8_general_ci,
+  `PageName` varchar(255) collate utf8_general_ci default NULL,
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `intro`
@@ -217,19 +219,19 @@ INSERT INTO `intro` (`Id`, `Detail`, `PageName`) VALUES
 DROP TABLE IF EXISTS `manufacturer`;
 CREATE TABLE IF NOT EXISTS `manufacturer` (
   `Id` int(10) NOT NULL auto_increment,
-  `Name` varchar(255) collate latin1_general_ci default NULL,
-  `Telephone` varchar(255) collate latin1_general_ci default NULL,
-  `Mobile` varchar(255) collate latin1_general_ci default NULL,
-  `Fax` varchar(255) collate latin1_general_ci default NULL,
-  `Email` varchar(255) collate latin1_general_ci default NULL,
-  `Website` varchar(255) collate latin1_general_ci default NULL,
-  `Address` varchar(255) collate latin1_general_ci default NULL,
-  `Image` varchar(255) collate latin1_general_ci default NULL,
-  `Info` varchar(255) collate latin1_general_ci default NULL,
+  `Name` varchar(255) collate utf8_general_ci default NULL,
+  `Telephone` varchar(255) collate utf8_general_ci default NULL,
+  `Mobile` varchar(255) collate utf8_general_ci default NULL,
+  `Fax` varchar(255) collate utf8_general_ci default NULL,
+  `Email` varchar(255) collate utf8_general_ci default NULL,
+  `Website` varchar(255) collate utf8_general_ci default NULL,
+  `Address` varchar(255) collate utf8_general_ci default NULL,
+  `Image` varchar(255) collate utf8_general_ci default NULL,
+  `Info` varchar(255) collate utf8_general_ci default NULL,
   `Position` int(10) default NULL,
   `Status` int(10) default '1',
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `manufacturer`
@@ -249,19 +251,19 @@ INSERT INTO `manufacturer` (`Id`, `Name`, `Telephone`, `Mobile`, `Fax`, `Email`,
 DROP TABLE IF EXISTS `member`;
 CREATE TABLE IF NOT EXISTS `member` (
   `Id` int(10) NOT NULL auto_increment,
-  `Username` varchar(255) character set latin1 collate latin1_general_ci default NULL,
-  `Password` varchar(255) character set latin1 collate latin1_general_ci default NULL,
-  `Fullname` varchar(255) character set latin1 collate latin1_general_ci default NULL,
+  `Username` varchar(255) character set utf8 collate utf8_general_ci default NULL,
+  `Password` varchar(255) character set utf8 collate utf8_general_ci default NULL,
+  `Fullname` varchar(255) character set utf8 collate utf8_general_ci default NULL,
   `BirthDate` date default NULL,
   `JoinDate` date default NULL,
-  `Email` varchar(255) character set latin1 collate latin1_general_ci default NULL,
-  `Telephone` varchar(255) character set latin1 collate latin1_general_ci default NULL,
-  `Mobile` varchar(255) character set latin1 collate latin1_general_ci default NULL,
-  `Address` varchar(255) character set latin1 collate latin1_general_ci default NULL,
+  `Email` varchar(255) character set utf8 collate utf8_general_ci default NULL,
+  `Telephone` varchar(255) character set utf8 collate utf8_general_ci default NULL,
+  `Mobile` varchar(255) character set utf8 collate utf8_general_ci default NULL,
+  `Address` varchar(255) character set utf8 collate utf8_general_ci default NULL,
   `RootId` int(10) default '0',
   `Status` int(2) default '1',
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED AUTO_INCREMENT=30 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED AUTO_INCREMENT=30 ;
 
 --
 -- Dumping data for table `member`
@@ -303,7 +305,7 @@ CREATE TABLE IF NOT EXISTS `method` (
   `Fax` varchar(255) default NULL,
   `Telephone` varchar(255) default NULL,
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `method`
@@ -321,11 +323,11 @@ INSERT INTO `method` (`Id`, `Money`, `YahooMessenger`, `Skype`, `Email`, `HotLin
 DROP TABLE IF EXISTS `news`;
 CREATE TABLE IF NOT EXISTS `news` (
   `Id` int(10) NOT NULL auto_increment,
-  `Title` varchar(255) collate latin1_general_ci default NULL,
-  `Description` text collate latin1_general_ci,
-  `Detail` text collate latin1_general_ci,
-  `Image` varchar(255) collate latin1_general_ci default NULL,
-  `ImageNote` varchar(255) collate latin1_general_ci default NULL,
+  `Title` varchar(255) collate utf8_general_ci default NULL,
+  `Description` text collate utf8_general_ci,
+  `Detail` text collate utf8_general_ci,
+  `Image` varchar(255) collate utf8_general_ci default NULL,
+  `ImageNote` varchar(255) collate utf8_general_ci default NULL,
   `newscategoryId` int(10) default NULL,
   `HotNews` int(2) default '0',
   `Status` int(2) default '1',
@@ -333,7 +335,7 @@ CREATE TABLE IF NOT EXISTS `news` (
   `ModifyDate` datetime default NULL,
   `View` int(10) default '0',
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `news`
@@ -358,12 +360,12 @@ INSERT INTO `news` (`Id`, `Title`, `Description`, `Detail`, `Image`, `ImageNote`
 DROP TABLE IF EXISTS `newscategory`;
 CREATE TABLE IF NOT EXISTS `newscategory` (
   `Id` int(10) NOT NULL auto_increment,
-  `Name` varchar(255) collate latin1_general_ci default NULL,
+  `Name` varchar(255) collate utf8_general_ci default NULL,
   `Position` int(10) default NULL,
   `Status` int(2) default '1',
   `RootId` int(10) default '0',
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `newscategory`
@@ -392,7 +394,7 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `memberId` int(10) default NULL,
   `Address` text,
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
 
 --
 -- Dumping data for table `orders`
@@ -419,7 +421,7 @@ CREATE TABLE IF NOT EXISTS `ordersdetail` (
   `ordersId` int(10) default NULL,
   `productId` int(10) default NULL,
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=31 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=31 ;
 
 --
 -- Dumping data for table `ordersdetail`
@@ -455,7 +457,7 @@ CREATE TABLE IF NOT EXISTS `percent` (
   `Percent` double default NULL,
   `Loop` int(10) default NULL,
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `percent`
@@ -473,17 +475,17 @@ INSERT INTO `percent` (`Id`, `Point`, `Percent`, `Loop`) VALUES
 DROP TABLE IF EXISTS `product`;
 CREATE TABLE IF NOT EXISTS `product` (
   `Id` int(10) NOT NULL auto_increment,
-  `Name` varchar(255) collate latin1_general_ci default NULL,
-  `Code` varchar(255) collate latin1_general_ci default NULL,
-  `Description` text collate latin1_general_ci,
-  `Detail` text collate latin1_general_ci,
-  `Image` varchar(255) collate latin1_general_ci default NULL,
-  `ImageNote` text collate latin1_general_ci,
+  `Name` varchar(255) collate utf8_general_ci default NULL,
+  `Code` varchar(255) collate utf8_general_ci default NULL,
+  `Description` text collate utf8_general_ci,
+  `Detail` text collate utf8_general_ci,
+  `Image` varchar(255) collate utf8_general_ci default NULL,
+  `ImageNote` text collate utf8_general_ci,
   `Status` int(2) default '1',
   `Views` int(10) default '0',
   `Orders` int(10) default '0',
-  `Price` varchar(255) collate latin1_general_ci default NULL,
-  `PriceQTM` varchar(255) collate latin1_general_ci default '0',
+  `Price` varchar(255) collate utf8_general_ci default NULL,
+  `PriceQTM` varchar(255) collate utf8_general_ci default '0',
   `HotProduct` int(2) default NULL,
   `CreateDate` datetime default NULL,
   `ModifyDate` datetime default NULL,
@@ -493,7 +495,7 @@ CREATE TABLE IF NOT EXISTS `product` (
   `providerId` int(10) default '0',
   `manufacturerId` int(10) default '0',
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=300 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=300 ;
 
 --
 -- Dumping data for table `product`
@@ -812,8 +814,8 @@ CREATE TABLE IF NOT EXISTS `productproperty` (
   `Id` int(10) NOT NULL,
   `productId` int(10) NOT NULL,
   `propertyId` int(10) NOT NULL,
-  `Value` text collate latin1_general_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `Value` text collate utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `productproperty`
@@ -1043,15 +1045,15 @@ INSERT INTO `productproperty` (`Id`, `productId`, `propertyId`, `Value`) VALUES
 DROP TABLE IF EXISTS `property`;
 CREATE TABLE IF NOT EXISTS `property` (
   `Id` int(10) NOT NULL auto_increment,
-  `Name` varchar(255) collate latin1_general_ci default NULL,
-  `Detail` text collate latin1_general_ci,
-  `Unit` varchar(255) collate latin1_general_ci default NULL,
-  `Value` varchar(255) collate latin1_general_ci default NULL,
+  `Name` varchar(255) collate utf8_general_ci default NULL,
+  `Detail` text collate utf8_general_ci,
+  `Unit` varchar(255) collate utf8_general_ci default NULL,
+  `Value` varchar(255) collate utf8_general_ci default NULL,
   `Status` int(2) default '1',
   `Position` int(10) default NULL,
   `RootId` int(10) NOT NULL default '0',
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=21 ;
 
 --
 -- Dumping data for table `property`
@@ -1073,19 +1075,19 @@ INSERT INTO `property` (`Id`, `Name`, `Detail`, `Unit`, `Value`, `Status`, `Posi
 DROP TABLE IF EXISTS `provider`;
 CREATE TABLE IF NOT EXISTS `provider` (
   `Id` int(10) NOT NULL auto_increment,
-  `Name` varchar(255) collate latin1_general_ci default NULL,
-  `Telephone` varchar(255) collate latin1_general_ci default NULL,
-  `Mobile` varchar(255) collate latin1_general_ci default NULL,
-  `Fax` varchar(255) collate latin1_general_ci default NULL,
-  `Email` varchar(255) collate latin1_general_ci default NULL,
-  `Website` varchar(255) collate latin1_general_ci default NULL,
-  `Address` varchar(255) collate latin1_general_ci default NULL,
-  `Image` varchar(255) collate latin1_general_ci default NULL,
-  `Info` varchar(255) collate latin1_general_ci default NULL,
+  `Name` varchar(255) collate utf8_general_ci default NULL,
+  `Telephone` varchar(255) collate utf8_general_ci default NULL,
+  `Mobile` varchar(255) collate utf8_general_ci default NULL,
+  `Fax` varchar(255) collate utf8_general_ci default NULL,
+  `Email` varchar(255) collate utf8_general_ci default NULL,
+  `Website` varchar(255) collate utf8_general_ci default NULL,
+  `Address` varchar(255) collate utf8_general_ci default NULL,
+  `Image` varchar(255) collate utf8_general_ci default NULL,
+  `Info` varchar(255) collate utf8_general_ci default NULL,
   `Position` int(10) default NULL,
   `Status` int(10) default '1',
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `provider`
@@ -1106,7 +1108,7 @@ CREATE TABLE IF NOT EXISTS `rate` (
   `Point` int(11) default NULL,
   `Percent` double default NULL,
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `rate`
@@ -1126,12 +1128,12 @@ INSERT INTO `rate` (`Id`, `Point`, `Percent`) VALUES
 DROP TABLE IF EXISTS `rules`;
 CREATE TABLE IF NOT EXISTS `rules` (
   `Id` int(10) NOT NULL,
-  `Name` varchar(255) collate latin1_general_ci default NULL,
-  `Detail` text collate latin1_general_ci,
+  `Name` varchar(255) collate utf8_general_ci default NULL,
+  `Detail` text collate utf8_general_ci,
   `WriteDate` datetime default NULL,
   `Status` int(2) default '1',
   `Position` int(10) default NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `rules`
@@ -1151,12 +1153,12 @@ INSERT INTO `rules` (`Id`, `Name`, `Detail`, `WriteDate`, `Status`, `Position`) 
 DROP TABLE IF EXISTS `unit`;
 CREATE TABLE IF NOT EXISTS `unit` (
   `Id` int(10) NOT NULL auto_increment,
-  `Name` varchar(255) collate latin1_general_ci default NULL,
-  `Info` text collate latin1_general_ci,
+  `Name` varchar(255) collate utf8_general_ci default NULL,
+  `Info` text collate utf8_general_ci,
   `Status` int(2) default '1',
   `Position` int(10) default NULL,
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=16 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `unit`
@@ -1195,7 +1197,7 @@ CREATE TABLE IF NOT EXISTS `usersonline` (
   KEY `timestamp` (`TimeStamp`),
   KEY `SessionID` (`SessionID`),
   KEY `FILE` (`File`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=33 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=33 ;
 
 --
 -- Dumping data for table `usersonline`
@@ -1215,14 +1217,14 @@ INSERT INTO `usersonline` (`Id`, `TimeStamp`, `SessionID`, `File`) VALUES
 DROP TABLE IF EXISTS `websiteconfig`;
 CREATE TABLE IF NOT EXISTS `websiteconfig` (
   `Id` int(11) NOT NULL auto_increment,
-  `YahooMessenger` varchar(255) collate latin1_general_ci default NULL,
-  `Skype` varchar(255) collate latin1_general_ci default NULL,
-  `HotLine` varchar(255) collate latin1_general_ci default NULL,
-  `Fax` varchar(255) collate latin1_general_ci default NULL,
-  `Telephone` varchar(255) collate latin1_general_ci default NULL,
-  `Email` varchar(255) collate latin1_general_ci default NULL,
+  `YahooMessenger` varchar(255) collate utf8_general_ci default NULL,
+  `Skype` varchar(255) collate utf8_general_ci default NULL,
+  `HotLine` varchar(255) collate utf8_general_ci default NULL,
+  `Fax` varchar(255) collate utf8_general_ci default NULL,
+  `Telephone` varchar(255) collate utf8_general_ci default NULL,
+  `Email` varchar(255) collate utf8_general_ci default NULL,
   PRIMARY KEY  (`Id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `websiteconfig`

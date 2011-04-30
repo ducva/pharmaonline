@@ -14,8 +14,6 @@ class clsTable extends DB_DBASES
 	}
 	function select($sFieldName = '', $sJoin = '', $sOn = '', $sCondition = '', $sOrder = '', $sLimit = '')
 	{
-		mysql_query("SET NAMES 'utf-8'");
-		mysql_query("SET CHARACTER SET utf-8");
 		$sFieldName = ($sFieldName == '' ? '*' : $sFieldName);
 		if($sJoin == '')
 			$sField = str_replace('*', $this->sAllField, $sFieldName);
@@ -32,8 +30,9 @@ class clsTable extends DB_DBASES
 		$sJoin = ($sJoin == '' ? '' : " F INNER JOIN $sJoin L");
 		$sOn = ($sOn == '' ? '' : "ON $sOn");
 		$sql = "SELECT $sFieldName FROM $this->sTableName $sJoin $sOn $sCondition $sOrder $sLimit";
-		//echo $sql;
+		//echo $sql;die;
 		$result = $this->db_query($sql);
+
 		$aTable = array();
 		$iLine = -1;
 		while($row = $this->db_fetch_array($result))
@@ -43,10 +42,13 @@ class clsTable extends DB_DBASES
 			while(list($key, $value) = each($aField))
 			{
 				$value = ((strpos($value, ' as ')) ? substr($value, strpos( $value, ' as ') + 4) : $value);
+				
 				$value = trim($value);
+				
 				$aTable[$iLine][$value] = $row[$value];
 			}
 		}
+		var_dump($aTable); die;
 		return $aTable;
 	}
 	function insert($sFields, $sValues)
