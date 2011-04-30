@@ -1,0 +1,399 @@
+BODY {
+	MARGIN: 0px; BACKGROUND-COLOR: white
+}
+FORM {
+	DISPLAY: inline
+}
+.SMMainTable {
+	BACKGROUND-COLOR: white
+}
+.MainLeftCell {
+	BACKGROUND-IMAGE: url(../images/common/leftborder.gif); WIDTH: 10px
+}
+.MainRightCell {
+	BACKGROUND-IMAGE: url(../images/common/rightborder.gif); WIDTH: 10px
+}
+.HiddenLink {
+	FONT: 11px Tahoma; CURSOR: hand
+}
+.SMButton {
+	FONT: 10px Verdana
+}
+.SMTextBox {
+	BORDER-RIGHT: #cccccc 5px solid; BORDER-TOP: #cccccc 1px solid; FONT: 12px Arial; BORDER-LEFT: #cccccc 1px solid; COLOR: #666666; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: white
+}
+.cellBigCaption {
+	FONT: bold 12px Verdana
+}
+.cellErrorMessage {
+	FONT: bold 12px Verdana
+}
+.cellCaption {
+	FONT: 11px Verdana
+}
+.cellCaption A {
+	CURSOR: hand
+}
+.CurrentUserName {
+	FONT: bold 12px Tahoma; COLOR: #0099ff
+}
+.SMCategoryTitle {
+	PADDING-LEFT: 4px; FONT: 11px Arial
+}
+.SMCategory {
+	PADDING-BOTTOM: 5px; FONT: 11px Verdana; PADDING-TOP: 5px
+}
+.SMCategory A {
+	COLOR: #474747; TEXT-DECORATION: none
+}
+.SMCategory A:hover {
+	COLOR: black; TEXT-DECORATION: underline
+}
+.SMCategoryTable {
+	BORDER-LEFT: #feb63d 1px solid; BORDER-BOTTOM: #feb63d 1px solid; HEIGHT: 100%
+}
+.RealTimeCell {
+	FONT: 11px Verdana; COLOR: #ffffcc
+}
+.cellSubHeaderLeft {
+	PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(../images/Left/bgTitle.gif); WIDTH: 188px; TEXT-ALIGN: left
+}
+.SearchBox {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; FONT: 11px Verdana; BORDER-LEFT: #cccccc 1px solid; WIDTH: 90%; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid
+}
+.cellUserStatus A {
+	PADDING-LEFT: 15px; FONT: 11px Verdana; COLOR: black; TEXT-DECORATION: none
+}
+.cellUserStatus {
+	PADDING-RIGHT: 10px; BACKGROUND-IMAGE: url(../images/welcome/bg22.gif); WIDTH: 299px; HEIGHT: 42px; TEXT-ALIGN: right
+}
+.cellUserStatus A:hover {
+	TEXT-DECORATION: none
+}
+.SMAdvancedSearchTable {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #f4f8ff
+}
+.cellSearchFormTitle {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: bold 11px Tahoma; COLOR: white; PADDING-TOP: 5px; BACKGROUND-COLOR: #6699cc
+}
+.cellAdSearchDesc {
+	FONT: 11px Verdana; COLOR: #333333
+}
+.AdSearchTextBox {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; FONT: 11px Verdana; BORDER-LEFT: #cccccc 1px solid; COLOR: #666666; BORDER-BOTTOM: #cccccc 1px solid
+}
+.SMSelect {
+	FONT: 11px Verdana; WIDTH: 100%; COLOR: #333333
+}
+.SMSearchResultTable {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 100%; BORDER-BOTTOM: #cccccc 1px solid
+}
+.SMSearchResultTable TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: bold 11px Tahoma; COLOR: white; PADDING-TOP: 5px; BACKGROUND-COLOR: #6699cc
+}
+.SMSearchResultTable TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 1px; FONT: 11px Verdana; COLOR: #666666; PADDING-TOP: 5px
+}
+.PostLink {
+	FONT-WEIGHT: 600; CURSOR: hand; COLOR: #666666; TEXT-DECORATION: none
+}
+.SMPagingTable {
+	FONT: bold 11px Tahoma; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.SMPagingTable TD {
+	MARGIN: 0px
+}
+.SMPagingCell {
+	FONT: bold 11px Tahoma
+}
+.SMPagingCell SELECT {
+	FONT: 11px Tahoma
+}
+.SMOneProductTable {
+	PADDING-BOTTOM: 10px; BORDER-LEFT: #cccccc 1px solid; BORDER-TOP-STYLE: none; BORDER-BOTTOM: #cccccc 1px solid; BORDER-RIGHT-STYLE: none
+}
+.cellShowProductName {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; FONT: bold 10px Verdana; COLOR: black; PADDING-TOP: 5px; BACKGROUND-COLOR: #f5f8fb
+}
+.cellShowProductName A {
+	CURSOR: hand; COLOR: #ff6600; TEXT-DECORATION: none
+}
+.cellShowProductDock {
+	WIDTH: 0px
+}
+.cellShowProductDesc {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 20px; FONT: 11px Arial; COLOR: black; PADDING-TOP: 5px
+}
+.cellShowProductPrice {
+	PADDING-RIGHT: 15px; PADDING-BOTTOM: 5px; FONT: 10px Verdana; COLOR: black; PADDING-TOP: 5px; BACKGROUND-COLOR: #f5f8fb; TEXT-ALIGN: right
+}
+.cellShowProductPriceContent {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.cellShowProductStock {
+	FONT: 10px Verdana; TEXT-ALIGN: right
+}
+.cellShowProductStockContent {
+	COLOR: maroon
+}
+.cellShowProductWarranty {
+	PADDING-RIGHT: 15px; FONT: 10px Verdana; COLOR: darkblue; TEXT-ALIGN: right
+}
+.cellShowProductWarrantyContent {
+	COLOR: teal
+}
+.AlternateRow {
+	BACKGROUND-COLOR: #f7f9f8
+}
+.SMProductDetailsTable {
+	BORDER-RIGHT: #cccccc 1px dashed; BORDER-TOP: #cccccc 1px dashed; MARGIN: 5px; BORDER-LEFT: #cccccc 1px dashed; BORDER-BOTTOM: #cccccc 1px dashed
+}
+.cellProDetailsName {
+	PADDING-LEFT: 10px; PADDING-BOTTOM: 3px; FONT: bold 12px Tahoma; COLOR: white; PADDING-TOP: 3px; BACKGROUND-COLOR: #6699cc
+}
+.cellProDetailsImage {
+	PADDING-LEFT: 15px; FONT: 11px Arial
+}
+.cellProDetailsDesc {
+	PADDING-LEFT: 25px; FONT: 11px Arial
+}
+.cellProDetailsPrice {
+	FONT: bold 11px Arial
+}
+.cellProDetailsPriceContent {
+	COLOR: red
+}
+.cellProDetailsStock {
+	FONT: bold 11px Arial
+}
+.cellProDetailsStockContent {
+	COLOR: maroon
+}
+.cellProDetailsWarranty {
+	FONT: bold 11px Arial
+}
+.cellProDetailsWarrantyContent {
+	COLOR: teal
+}
+.SMRelateProTable TH {
+	PADDING-BOTTOM: 3px; FONT: bold 11px Tahoma; COLOR: white; PADDING-TOP: 3px; BACKGROUND-COLOR: #6699cc
+}
+.cellRelateProSTT {
+	FONT: 11px Verdana; BACKGROUND-COLOR: #f5f8fb; TEXT-ALIGN: center
+}
+.cellRelateProName {
+	FONT: 11px Verdana; BACKGROUND-COLOR: #f5f8fb
+}
+.cellRelateProName A {
+	FONT: 11px Verdana; CURSOR: hand; COLOR: black
+}
+.cellRelateProPrice {
+	FONT: 11px Verdana; BACKGROUND-COLOR: #f5f8fb; TEXT-ALIGN: center
+}
+.cellNormalBodyTitle {
+	FONT: bold 12px Tahoma
+}
+.NavLink {
+	FONT: bold 11px Tahoma; COLOR: black
+}
+.RelateProductsFS {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; WIDTH: 80%; PADDING-TOP: 5px
+}
+.RelateProductsFS LEGEND {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 10px; FONT: bold 10px Verdana; TEXT-TRANSFORM: uppercase; COLOR: black; PADDING-TOP: 10px
+}
+.cellMainNewsDetails {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND-COLOR: #f3f3f3
+}
+.cellNewsTopTitle {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; FONT: bold 12px Arial; VERTICAL-ALIGN: middle; COLOR: black; PADDING-TOP: 5px
+}
+.cellDetailsLink {
+	FONT: bold 11px Tahoma; CURSOR: hand; COLOR: #3366cc; PADDING-TOP: 4px
+}
+.cellNewsInitial {
+	FONT: 11px Tahoma; BACKGROUND-COLOR: #dad9e9; TEXT-ALIGN: justify
+}
+.cellNewsTitle {
+	FONT: bold 11px Arial; COLOR: black
+}
+.cellNewsContent {
+	FONT: 12px Arial; TEXT-ALIGN: justify
+}
+.cellNewsContent .normal {
+	FONT: 12px Arial; TEXT-ALIGN: justify
+}
+.SMShoppingCartTable {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.SMShoppingCartTable TH {
+	PADDING-BOTTOM: 5px; FONT: bold 12px Tahoma; COLOR: white; PADDING-TOP: 5px; BACKGROUND-COLOR: #6699cc
+}
+.cellCartProCode {
+	PADDING-LEFT: 10px; FONT: 11px Arial; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: #f5f8fb
+}
+.cellCartProName {
+	FONT: 11px Arial; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: #f5f8fb
+}
+.cellCartPrice {
+	FONT: 11px Arial; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: #f5f8fb; TEXT-ALIGN: center
+}
+.cellCartEditQty {
+	FONT: 11px Arial; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: #f5f8fb; TEXT-ALIGN: center
+}
+.cellCartEditQty INPUT {
+	TEXT-ALIGN: center
+}
+.cellCartProTotal {
+	FONT: 11px Arial; WIDTH: 130px; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: #f5f8fb; TEXT-ALIGN: right
+}
+.cellCartUnit {
+	FONT: 11px Arial; WIDTH: 20px; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: #f5f8fb; TEXT-ALIGN: center
+}
+.cellCartRemove {
+	FONT: 11px Arial; WIDTH: 30px; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: #f5f8fb; TEXT-ALIGN: center
+}
+.cellCartTotalCast {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: bold 11px Tahoma; PADDING-TOP: 3px
+}
+.SMReceiver {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #f5f8fb
+}
+.cellReceiverLeftCol {
+	FONT: bold 12px Tahoma; TEXT-ALIGN: right
+}
+.cellReceiverRightCol {
+	PADDING-LEFT: 5px; FONT: 12px Tahoma; TEXT-ALIGN: left
+}
+.cellReceiverTitle {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: bold 11px Tahoma; COLOR: white; PADDING-TOP: 5px; BACKGROUND-COLOR: #6699cc
+}
+.cellRegisterIntro {
+	PADDING-BOTTOM: 15px; FONT: 11px Verdana; COLOR: black; PADDING-TOP: 15px; TEXT-ALIGN: center
+}
+.cellRegisterLegend {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: bold 11px Tahoma; COLOR: white; PADDING-TOP: 5px; BACKGROUND-COLOR: #6699cc; TEXT-ALIGN: right
+}
+.cellRegisterLeftCol {
+	PADDING-RIGHT: 10px; PADDING-BOTTOM: 5px; FONT: 11px Verdana; WIDTH: 40%; COLOR: black; PADDING-TOP: 5px; TEXT-ALIGN: right
+}
+.cellRegisterLeftCol INPUT {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; WIDTH: 70%; BORDER-BOTTOM: black 1px solid
+}
+.cellRegisterTitle {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: bold 11px Tahoma; COLOR: white; PADDING-TOP: 5px; BACKGROUND-COLOR: #6699cc
+}
+.SMRegisterTable {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 500px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #f5f8fb
+}
+.cellLoginTitle {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #f5f8fb; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: #6699cc
+}
+.cellContent_Span {
+	BORDER-TOP-WIDTH: 0px; FONT-SIZE: x-small; BORDER-BOTTOM-WIDTH: 0px; COLOR: black; FONT-FAMILY: Arial
+}
+.cellContent_Left {
+	BORDER-TOP-WIDTH: 0px; FONT-SIZE: 11px; BORDER-BOTTOM-WIDTH: 0px; COLOR: black; FONT-FAMILY: Tahoma; BORDER-RIGHT-WIDTH: 0px
+}
+.cellContent_Right {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 6px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: x-small; BORDER-BOTTOM-WIDTH: 0px; COLOR: black; FONT-FAMILY: Arial
+}
+.cellContent_Bottom {
+	BORDER-TOP-WIDTH: 0px; FONT-SIZE: x-small; COLOR: black; FONT-FAMILY: Arial
+}
+.LoginControl {
+	WIDTH: 150px
+}
+.SMLoginTable {
+	BORDER-RIGHT: #eeeeee 1px solid; BORDER-TOP: #eeeeee 1px solid; VERTICAL-ALIGN: middle; BORDER-LEFT: #eeeeee 1px solid; WIDTH: 430px; BORDER-BOTTOM: #eeeeee 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f5f8fb
+}
+.SMLoginTable TD {
+	BORDER-RIGHT: 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: 0px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: 0px solid; PADDING-TOP: 0px; BORDER-BOTTOM: 0px solid
+}
+.SMLoginTable .cellLoginBottom {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 8px; BORDER-TOP: 0px; FONT-SIZE: 11px; PADDING-BOTTOM: 4px; BORDER-LEFT: 0px; COLOR: #cccccc; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma
+}
+.SMCheckOutTable {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.SMCheckOutTable TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: bold 11px Tahoma; COLOR: white; PADDING-TOP: 5px; BACKGROUND-COLOR: #6699cc
+}
+.SMMessageTableContainer {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; WIDTH: 90%; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #666666
+}
+.cellCheckOutProCode {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: 11px Arial; PADDING-TOP: 5px; BACKGROUND-COLOR: #f5f8fb
+}
+.cellCheckOutProName {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: 11px Arial; PADDING-TOP: 5px; BACKGROUND-COLOR: #f5f8fb
+}
+.cellCheckOutProPrice {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: 11px Arial; PADDING-TOP: 5px; BACKGROUND-COLOR: #f5f8fb
+}
+.cellCheckOutProQty {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: 11px Arial; PADDING-TOP: 5px; BACKGROUND-COLOR: #f5f8fb
+}
+.cellCheckOutProTotal {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Arial; PADDING-TOP: 3px; BACKGROUND-COLOR: #f5f8fb
+}
+.cellCheckOutTotal {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: bold 11px Tahoma; COLOR: black; PADDING-TOP: 3px
+}
+.cellCheckOutIntro {
+	MARGIN-BOTTOM: 15px; FONT: 12px Arial; TEXT-ALIGN: center
+}
+.cellOrderListCaption {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 7px; PADDING-BOTTOM: 5px; FONT: bold 11px Tahoma; COLOR: black; PADDING-TOP: 5px
+}
+.cellOrderListContent {
+	FONT: 11px Tahoma; COLOR: black; TEXT-ALIGN: left
+}
+.SMOrderListTable {
+	BORDER-RIGHT: #eeeeee 1px solid; BORDER-TOP: #eeeeee 1px solid; MARGIN-BOTTOM: 15px; BORDER-LEFT: #eeeeee 1px solid; BORDER-BOTTOM: #eeeeee 1px solid
+}
+.cellOrderListTitle {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: bold 11px Tahoma; COLOR: white; PADDING-TOP: 5px; BACKGROUND-COLOR: #6699cc
+}
+.cellOrderListTitle A {
+	COLOR: white; TEXT-DECORATION: underline
+}
+.SMIntroTable {
+	WIDTH: 98%; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: #fafafa; BORDER-BOTTOM-STYLE: none
+}
+.cellIntro {
+	MARGIN-BOTTOM: 15px; FONT: 12px Arial; TEXT-ALIGN: center
+}
+.SMOrderDetailsTable {
+	BORDER-RIGHT: #eeeeee 1px solid; BORDER-TOP: #eeeeee 1px solid; BORDER-LEFT: #eeeeee 1px solid; BORDER-BOTTOM: #eeeeee 1px solid
+}
+.SMOrderDetailsTable TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: bold 11px Tahoma; COLOR: white; PADDING-TOP: 5px; BACKGROUND-COLOR: #6699cc
+}
+.cellOrderDetailsContent {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: 11px Tahoma; PADDING-TOP: 5px; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: #f5f8fb
+}
+.cellOrderDetailsBottom {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: bold 11px Tahoma; COLOR: black; PADDING-TOP: 5px
+}
+.SMFooterLeftCell {
+	PADDING-LEFT: 11px; FONT-SIZE: 11px; FONT-FAMILY: Tahoma
+}
+.SMFooterRightCell {
+	TEXT-ALIGN: center
+}
+.SMFooterRightCell A {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.SMFeaturedProductTable {
+	BORDER-RIGHT: #feb63d 1px solid; BORDER-TOP: #feb63d 1px solid; BORDER-LEFT: #feb63d 1px solid; BORDER-BOTTOM: #feb63d 1px solid
+}
+.FPName {
+	FONT: 11px Arial; COLOR: black
+}
+.cellFPContent {
+	FONT: 11px Verdana; COLOR: #666666
+}
+.cellFPTitle {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#6699CC', endColorStr='#F5F8FB', gradientType=0); PADDING-BOTTOM: 1px; FONT: 10px Tahoma; PADDING-TOP: 1px; HEIGHT: 20px
+}
