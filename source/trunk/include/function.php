@@ -1,5 +1,6 @@
 <?php	function sPriceFormat($iPrice)
 	{
+		return $iPrice;
 		//xu ly gia
 		$sPrice;
 		$aPrice=str_split($iPrice);

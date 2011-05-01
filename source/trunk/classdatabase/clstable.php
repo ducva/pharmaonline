@@ -32,7 +32,6 @@ class clsTable extends DB_DBASES
 		$sql = "SELECT $sFieldName FROM $this->sTableName $sJoin $sOn $sCondition $sOrder $sLimit";
 		//echo $sql;die;
 		$result = $this->db_query($sql);
-
 		$aTable = array();
 		$iLine = -1;
 		while($row = $this->db_fetch_array($result))
@@ -48,7 +47,6 @@ class clsTable extends DB_DBASES
 				$aTable[$iLine][$value] = $row[$value];
 			}
 		}
-		var_dump($aTable); die;
 		return $aTable;
 	}
 	function insert($sFields, $sValues)

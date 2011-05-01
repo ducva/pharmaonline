@@ -7,7 +7,7 @@ class DB_DBASES {
 	var $type;
 	var $database;
 	/*******************************************************************************/	
-	function DB_DBASES($host="localhost", $user="root", $pass="123456", $port=3306, $type="mysql", $dbase="4rum") {
+	function DB_DBASES($host="localhost", $user="root", $pass="123456", $port=3306, $type="mysql", $dbase="qtmonline") {
 		$this->hostname = $host;
 		$this->username = $user;
 		$this->password = $pass;

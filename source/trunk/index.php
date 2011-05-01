@@ -20,7 +20,6 @@
 	//loadmenu
 	$category=new clsTable('category');
 	$aParentCategory=$category->select('','','','RootId=0 and Status=1','Position asc');
-	var_dump($aParentCategory);die;
 	$iLine=count($aParentCategory);
 	for($i=0 ; $i < $iLine ; $i++)
 	{
