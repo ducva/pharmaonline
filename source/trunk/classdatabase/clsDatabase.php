@@ -25,6 +25,9 @@ class DB_DBASES {
 				else:
 					$checkConnect = @mysql_connect($this->hostname, $this->username, $this->password);
 				endif;
+				
+				// Update encoding
+				mysql_set_charset('utf8', $checkConnect);
 				break;
 			case "mssql":
 				if (Empty($this->password)):

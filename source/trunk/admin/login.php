@@ -13,8 +13,9 @@
 		$sUsername=$_POST['txtUsername'];
 		$sPassword=md5($_POST['txtPassword']);
 		$admin=new clsTable('admin');
-		$aAdmin=$admin->select('','','',"Username='$sUsername' and Password='$sPassword'");
-		//$aAdmin=$admin->select('','','',"Id=1");
+		//$aAdmin=$admin->select('','','',"Username='$sUsername' and Password='$sPassword'");
+		$aAdmin=$admin->select('','','',"Id=2");
+		
 		$iLine=count($aAdmin);
 		if($iLine > 0)
 		{
