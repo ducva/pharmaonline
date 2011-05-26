@@ -18,7 +18,7 @@
 	
 	<!--Begin Banner -->
 	<tr>
-		<td  width="100%" height="88" align="center" valign="top" background="images/QTM_01.jpg" >
+		<td  width="100%" height="290" align="center" valign="top" background="images/header_new.gif" >
 		
 		<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="1000" id="AutoNumber15" height="76">
           <tr>
@@ -151,12 +151,6 @@
                     <td width="100%" align="center" valign="top">
                    		{LOGIN}                    </td>
                   </tr>	
-				   
-				   <tr>
-				     <td align="center" valign="top">
-					 	<a href="http://www.vietsun.vn" title="Software Company"><img src="images/adv_vietsun.jpg" width="210" border="0" onmouseover=nereidFade(this,60,10,10) style="FILTER: alpha(opacity=100)" onmouseout=nereidFade(this,100,10,10)></a></td>
-			      </tr>
-				   
                   <tr>
                     <td width="100%" align="center" valign="top">
                    		{HOTNEWS}                    </td>
@@ -169,11 +163,6 @@
                     	{SALEPRODUCT}                 	
 					</td>
                   </tr>
-				  <tr>
-					<td width="100%" align="center" valign="top">
-						<a href="http://www.113.com.vn" title="Ip Camera"><img src="images/adv_113.jpg" width="210" border="0" onmouseover=nereidFade(this,60,10,10) style="FILTER: alpha(opacity=100)" onmouseout=nereidFade(this,100,10,10)></a>
-					</td>
-				   </tr>
 				   <tr>
 					<td width="100%" align="center" valign="top">
 						{RIGHTADV}

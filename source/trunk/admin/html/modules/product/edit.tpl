@@ -32,13 +32,14 @@
 	function CheckName(obj)
 	{
 		var regDoubleSpace = /\s\s/;
-		var regSpecialChar = /[`~!@#$%^&*()\-+=|\][}{;:'"\\/?.>,<]/;
+		//var regSpecialChar = /[`~!@#$%^&*()\-+=|\][}{;:'"\\/?.>,<]/;
+		var regSpecialChar = /[`~!@#$%^&*()\-+=|\][}{;:\'\"\\\/?.>,<]/;
 		while(regDoubleSpace.test(obj.value))
 		{
 			obj.value = obj.value.replace(regDoubleSpace, " ");
 		}	
 		Trim(obj);
-		if(obj.value == "" || regSpecialChar.test(obj.value))
+		if(obj.value == "")
 		{
 			return false;
 		}
@@ -92,18 +93,18 @@
 			obj.cboCategoryId.focus();
 			return false;
 		}
-		if(!CheckNumber(obj.txtPrice))
-		{
-			alert('Giá thị trường không hợp lệ!');
-			obj.txtPrice.focus();
-			return false;
-		}
-		if(!CheckNumber(obj.txtPriceQTM))
-		{
-			alert('Giá QTM không hợp lệ!');
-			obj.txtPriceQTM.focus();
-			return false;
-		}
+//		if(!CheckNumber(obj.txtPrice))
+//		{
+//			alert('Giá thị trường không hợp lệ!');
+//			obj.txtPrice.focus();
+//			return false;
+//		}
+//		if(!CheckNumber(obj.txtPriceQTM))
+//		{
+//			alert('Giá QTM không hợp lệ!');
+//			obj.txtPriceQTM.focus();
+//			return false;
+//		}
 		if(obj.cboCurrency.value==0)
 		{
 			alert('Bạn chưa chọn đơn vị tiền tệ!');
@@ -217,11 +218,11 @@ href="#"><IMG class=icon src="images/refresh.gif"></A>
 											{PROPERTY}
 										</TD>
 									</TR>
-									<TR>
-								  		<TH valign="middle">Giá thị trường:<SPAN class=note>&nbsp;</SPAN></TH>
-								  		<TD valign="middle">
-											<input name="txtPrice" type="text" value="{PRICE}" />									  </TD>
-									</TR>
+<!--									<TR>-->
+<!--								  		<TH valign="middle">Giá thị trường:<SPAN class=note>&nbsp;</SPAN></TH>-->
+<!--								  		<TD valign="middle">-->
+<!--											<input name="txtPrice" type="text" value="{PRICE}" />									  </TD>-->
+<!--									</TR>-->
 									<TR>
 								  		<TH valign="middle">Giá QTM-Group:<SPAN class=note>&nbsp;</SPAN></TH>
 								  		<TD valign="middle">

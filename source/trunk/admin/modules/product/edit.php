@@ -51,7 +51,9 @@
 		$sDescription=$_POST['txtDescription'];
 		$sDetail=$_POST['txtDetail'];
 		$iHotProduct=$_POST['radHotProduct'];
-		$sPrice=$_POST['txtPrice'];
+		
+		// ignore Price
+		$sPrice=0;
 		$sPriceQTM=$_POST['txtPriceQTM'];
 		$iCurrency=$_POST['cboCurrency'];
 		$iUnit=$_POST['cboUnit'];
