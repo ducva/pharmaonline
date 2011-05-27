@@ -27,6 +27,7 @@ _cmSplit,
 	['<img src="./images/edit.png" />','Bài viết','',null,'menu20 ',
 		['<img src="./images/scroll_view.png" />','Danh sách bài viết','index.php?page=news&do=list',null,'menu23 '],
 		['<img src="./images/news_add.png" />','Thêm mới bài viết','index.php?page=news&do=add',null,'menu24 '],
+		['<img src="./images/news_add.png" />','Nội dung tĩnh','index.php?page=static&do=list',null,'menu90 '],
 	],
 
 ],

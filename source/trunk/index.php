@@ -68,7 +68,8 @@
 					'rules'=>'rules',
 					'register'=>'register',
 					'buy'=>'buy',
-					'membertree'=>'membertree'
+					'membertree'=>'membertree',
+					'static'=>'static', // static content
 					);
 					
 	//toptadv
