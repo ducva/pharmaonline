@@ -31,7 +31,8 @@
 					'adv'=>'adv',
 					'orders'=>'orders',
 					'config'=>'config',
-					'rate'=>'rate'
+					'rate'=>'rate',
+					'support'=>'support'
 					);
 	//end init
 	include "include/xtpl.php";

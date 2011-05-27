@@ -69,6 +69,7 @@
 					'register'=>'register',
 					'buy'=>'buy',
 					'membertree'=>'membertree',
+					'support' => 'support', // Hỗ trợ viên
 					'static'=>'static', // static content
 					);
 					

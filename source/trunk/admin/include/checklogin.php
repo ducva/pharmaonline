@@ -1,6 +1,6 @@
 <?php
 	
-	if(!session_is_registered('login'))
+	if(!$_SESSION['login'])
 	{
 		$_SESSION['login']="N" ;   
 	}  

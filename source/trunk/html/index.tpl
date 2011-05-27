@@ -189,12 +189,19 @@
 			<table width="100%" cellpadding="0" cellspacing="0" style="padding-top:10px;font-size:13px;">
 				<tr>
 					<td width="52%">
-						Bản quyền thuộc về QTM GROUP					</td>
+						SHOP VITAMIN ONLINE   MADE IN USA
+					</td>
 					<td width="48%" align="right">
 						<a href="./" class="footer">Trang chủ</a> | <a href="index.php?page=intro" class="footer">Giới thiệu</a> | <a href="index.php?page=news" class="footer">Tin tức</a> | <a href="index.php?page=service" class="footer">Dịch vụ</a> | <a href="index.php?page=contact" class="footer">Liên hệ</a> </td>
 				</tr>
 				<tr>
-					<td colspan="2">QTM GROUP - Address: Lô 9, Định Công, Hoàng Mai, Hà Nội - Thiết kế bởi Vietsun, 2008</td>
+					<td colspan="2">SHOP 1:  Số 32 Viện điều tra quy hoạch rừng – VQ – TT - HN	Tel.: 043-861-5960 </td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						Tel.: 0974700004
+						Email: vitaminonline@usa.com 
+					</td>
 				</tr>
 			</table>
 		</td>
