@@ -18,8 +18,8 @@
 	}
 	//new dBug($arrDisplay);
 	$oHelp->assign("LISTSUPPORT", $arrDisplay);
-	$oHelp->parse("MAIN.LISTSUPPORT");
+	$oHelp->parse('MAIN.LISTSUPPORT');
 	$oHelp->parse('MAIN');
-	new dBug("$oHelp");
+	//new dBug($oHelp);
 	$HTMLHelp=$oHelp->text('MAIN');
 ?>
