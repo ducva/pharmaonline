@@ -19,9 +19,7 @@
 		<td width="60%" align="left" valign="top">
 			<a href="index.php?page=productdetail&proid={SALEPRODUCT.ID}" class="lnkProName">{SALEPRODUCT.NAME}</a>
 				<BR>
-					Giá thị trường: <strike>{SALEPRODUCT.PRICE} {SALEPRODUCT.CURRENCY}</strike>
-				<BR>
-					<span class="priceQTM">Giá QTM: {SALEPRODUCT.PRICEQTM} {SALEPRODUCT.CURRENCY}</span>
+					<span class="priceQTM">Giá bán: {SALEPRODUCT.PRICEQTM}</span>
 		</td>
 	  </tr>
 	 <!-- END: SALEPRODUCT --> 

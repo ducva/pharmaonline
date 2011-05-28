@@ -25,8 +25,7 @@
 		  
 		  <tr style="padding-top:10px;">
 			<td width="73%" align="right" valign="top">
-			<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333">Giá thị trường: <strike>{PRODUCTCOL.PRICE} {PRODUCTCOL.CURRENCY}</strike></span><br />
-			<font color="#006633"><b>Giá QTM: {PRODUCTCOL.PRICEQTM} {PRODUCTCOL.CURRENCY}</b></font></td>
+			<font color="#006633"><b>Giá Bán: {PRODUCTCOL.PRICEQTM}</b></font></td>
 			<td width="27%" align="center" valign="top"><a href="index.php?page=cart&do=add&proid={PRODUCTCOL.ID}" style="cursor:hand"><img src="images/order.gif" border="0" align="absmiddle" /></a></td>
 		  </tr>
 		</table>

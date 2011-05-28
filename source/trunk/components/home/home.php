@@ -1,4 +1,5 @@
-<?php	$oHome=new XTemplate('html/components/home/home.tpl');
+<?php	
+	$oHome=new XTemplate('html/components/home/home.tpl');
 	
 	$oCategory=new clsTable('category');
 	
@@ -8,16 +9,22 @@
 	
 	for($a=0 ; $a < $iNumberCategory ; $a++)
 	{
+		
 		$aArray=array('NAME'=>$aCategory[$a]['Name']);
 		$aChildCategory=$oCategory->select('','','','RootId='.$aCategory[$a]['Id'],'Position asc');
-		$sListCategoryId="";
+		$sListCategoryId=$aCategory[$a]['Id'].",";
 		for($b=0 ; $b < count($aChildCategory) ; $b++)
 		{
 			$sListCategoryId.=$aChildCategory[$b]['Id']."','";
 		}
 		$oHome->assign('CATEGORY',$aArray);
 		$product=new clsTable('product');
+		
+		//new dBug($sListCategoryId); 
+		//die;
 		$aHotProduct=$product->select("","","","HotProduct=2 and categoryId IN ('".$sListCategoryId."')","Orders desc");
+		
+		//new dBug($aHotProduct);die;
 		$iLine=(count($aHotProduct)) > 4 ? 4 : count($aHotProduct);
 		//echo $iLine.'<BR>';
 		//phan trang
@@ -38,14 +45,18 @@
 						'IMAGE'=>$aHotProduct[$i]['Image'],
 						'CURRENCY'=>$aCurrency[0]['Name']
 						);
+			
+			//new dBug($aArray);
 			$oHome->assign('PRODUCTCOL',$aArray);
 			$oHome->parse('MAIN.CATEGORY.PRODUCTROW.PRODUCTCOL');
 			if($iSPT % 2 == 0)
 				$oHome->parse('MAIN.CATEGORY.PRODUCTROW');
 		
 		}
-		if($iLine > 4)
 		$oHome->parse('MAIN.CATEGORY.PRODUCTROW');
+		if($iLine > 4){
+			$oHome->parse('MAIN.CATEGORY.PRODUCTROW');
+		}
 		$oHome->assign('PAGING',$sLink);
 		$oHome->parse('MAIN.CATEGORY');
 	}

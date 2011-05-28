@@ -75,11 +75,7 @@
               </tr>
               <!-- END: LEFTNEWSMENU -->
 			  
-              <tr>
-                <td width="100%" align="center" valign="top">
-                	{HELP}
- 				</td>
-              </tr>
+              
               
               <tr>
                 <td width="100%" align="center" valign="top">
@@ -151,6 +147,11 @@
                     <td width="100%" align="center" valign="top">
                    		{LOGIN}                    </td>
                   </tr>	
+                  <tr>
+                <td width="100%" align="center" valign="top">
+                	{HELP}
+ 				</td>
+              </tr>
                   <tr>
                     <td width="100%" align="center" valign="top">
                    		{HOTNEWS}                    </td>

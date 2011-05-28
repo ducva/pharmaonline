@@ -3,10 +3,10 @@
 	
 	$webconfig=new clsTable('supporter');
 	$aWebconfig=$webconfig->select("name, skype, yahoo, title, mobile", '', '',' status=1');
-	// new dBug($aWebconfig);
-	$arrDisplay = array();
+	//new dBug($aWebconfig);
+	
 	foreach($aWebconfig as $support){
-		$arrDisplay[] = array(
+		$arrDisplay = array(
 			'TITLE'=>$support['title'],
 			'NAME'=>$support['name'],
 			'SKYPE'=>$support['skype'],
@@ -14,12 +14,14 @@
 			'MOBILE'=>$support['mobile'],
 			
 		);
-		
+		$oHelp->assign('LISTSUPPORT', $arrDisplay);
+		$oHelp->parse('MAIN.LISTSUPPORT');
 	}
 	//new dBug($arrDisplay);
-	$oHelp->assign("LISTSUPPORT", $arrDisplay);
-	$oHelp->parse('MAIN.LISTSUPPORT');
+	
 	$oHelp->parse('MAIN');
 	//new dBug($oHelp);
 	$HTMLHelp=$oHelp->text('MAIN');
+	
+	//new dBug($HTMLHelp);
 ?>

@@ -38,13 +38,13 @@
 	 <!-- END: LISTPROPERTY -->
       
 	  <tr>
-        <td width="47%" height="20" align="left" valign="middle" bordercolor="#E8F0E1" bgcolor="#F3F8EF" style="border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1"><span class="style14">&nbsp;<img border="0" src="images/square.gif" width="8" height="8"> Lo&#7841;i 
-          S&#7843;n ph&#7849;m </span></td>
+        <td width="47%" height="20" align="left" valign="middle" bordercolor="#E8F0E1" bgcolor="#F3F8EF" style="border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1"><span class="style14">&nbsp;<img border="0" src="images/square.gif" width="8" height="8"> Loại 
+          Sản phẩm </span></td>
         <td width="53%" align="left" valign="middle" bordercolor="#E8F0E1" bgcolor="#F3F8EF" style="border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1"><span class="style16">{CATEGORYNAME}</span></td>
       </tr>
       <tr>
         <td width="47%" height="20" align="left" valign="middle" bordercolor="#E8F0E1" bgcolor="#FFFFFF" style="border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1"><span class="style14">&nbsp;<img border="0" src="images/square.gif" width="8" height="8"> Hãng 
-          s&#7843;n xu&#7845;t</span></td>
+          sản xuất</span></td>
         <td width="53%" align="left" valign="middle" bordercolor="#E8F0E1" bgcolor="#FFFFFF" style="border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1"><span class="style16">{MANUFACTURER}</span></td>
       </tr>
       <tr>
@@ -59,18 +59,14 @@
         <td height="20" align="left" valign="middle" bordercolor="#E8F0E1" bgcolor="#F3F8EF" style="border-top-style: solid; border-top-width: 1"><span class="style14">&nbsp;<img src="images/square.gif" alt="1" width="8" height="8" border="0" /> Số lượt xem </span></td>
         <td align="left" valign="middle" bordercolor="#E8F0E1" bgcolor="#F3F8EF" style="border-top-style: solid; border-top-width: 1"><span class="style16">{VIEWS}</span></td>
       </tr>
-      <tr>
-        <td height="20" align="left" valign="middle" bordercolor="#E8F0E1" bgcolor="#FFFFFF" style="border-top-style: solid; border-top-width: 1"><span class="style14">&nbsp;<img src="images/square.gif" width="8" height="8" border="0" /> Giá thị trường </span></td>
-        <td align="left" valign="middle" bordercolor="#E8F0E1" bgcolor="#FFFFFF" style="border-top-style: solid; border-top-width: 1"><span class="style16"><strike>{PRICE} {CURRENCY} / {UNIT}</strike></span></td>
-      </tr>
       <tr class="priceQTM">
-        <td width="47%" height="20" align="left" valign="middle" bordercolor="#E8F0E1" bgcolor="#F3F8EF" style="border-top-style: solid; border-top-width: 1">&nbsp;<img border="0" src="images/square.gif" width="8" height="8"> Giá QTM </td>
+        <td width="47%" height="20" align="left" valign="middle" bordercolor="#E8F0E1" bgcolor="#F3F8EF" style="border-top-style: solid; border-top-width: 1">&nbsp;<img border="0" src="images/square.gif" width="8" height="8"> Giá bán:</td>
         <td width="53%" align="left" valign="middle" bordercolor="#E8F0E1" bgcolor="#F3F8EF" style="border-top-style: solid; border-top-width: 1">{PRICEQTM} {CURRENCY} / {UNIT}</td>
       </tr>
     </table></td>
   </tr>
   <tr>
-    <td width="100%" align="center" valign="top" colspan="2" style="padding-top:10px;padding-left:5px;padding-rigth:5px; padding-bottom:5px;"><p align="left">{DESCRIPTION}<br />
+    <td width="100%" align="center" valign="top" colspan="2" style="padding-top:10px;padding-left:5px;padding-rigth:5px; padding-bottom:5px;"><p align="left"><br />
       {DETAIL}</td>
   </tr>
   <tr>

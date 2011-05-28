@@ -96,9 +96,7 @@
 			$xtpl->parse('MAIN.LEFTNEWSMENU');
 		}
 		
-		//help
-		include "components/help/help.php";
-		$xtpl->assign('HELP',$HTMLHelp);
+		
 		
 		//rule
 		include "components/rule/rule.php";
@@ -145,6 +143,9 @@
 		//login
 		include "components/login/login.php";
 		$xtpl->assign('LOGIN',$HTMLLogin);
+		//help
+		include "components/help/help.php";
+		$xtpl->assign('HELP',$HTMLHelp);
 		//hotnews
 		include "components/hotnews/hotnews.php";
 		$xtpl->assign('HOTNEWS',$HTMLHotnews);
